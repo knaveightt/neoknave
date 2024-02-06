@@ -12,5 +12,6 @@ return {
         keymap.set("n", "<leader>bb", builtin.buffers, {})
         keymap.set("n", "<leader>bs", builtin.current_buffer_fuzzy_find, {})
         keymap.set("n", "<leader>pf", builtin.git_files, {})
+        keymap.set("n", "<leader>mm", builtin.marks, {})
     end,
 }

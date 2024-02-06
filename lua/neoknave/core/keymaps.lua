@@ -13,21 +13,18 @@ keymap.set("n", "<leader>bd", "<cmd>bd<CR>")
 --
 -- split management
 --
-keymap.set("n", "<C-h>", "<C-w>h")
-keymap.set("n", "<C-j>", "<C-w>j")
-keymap.set("n", "<C-k>", "<C-w>k")
-keymap.set("n", "<C-l>", "<C-w>l")
-keymap.set("n", "<leader>h", "<C-w>h")
-keymap.set("n", "<leader>j", "<C-w>j")
-keymap.set("n", "<leader>k", "<C-w>k")
-keymap.set("n", "<leader>l", "<C-w>l")
+keymap.set("n", "<leader>w", "<C-w>")
 keymap.set("n", "<leader>wq", ":close<CR>")
-keymap.set("n", "<leader>ws", "<C-w>s")
-keymap.set("n", "<leader>wv", "<C-w>v")
-keymap.set("n", "<M-h>", ":vertical resize -1<CR>") 
-keymap.set("n", "<M-l>", ":vertical resize +1<CR>")
-keymap.set("n", "<M-k>", ":resize -1<CR>")
-keymap.set("n", "<M-j>", ":resize +1<CR>")
+keymap.set("n", "<C-h>", ":vertical resize -1<CR>") 
+keymap.set("n", "<C-l>", ":vertical resize +1<CR>")
+keymap.set("n", "<C-k>", ":resize -1<CR>")
+keymap.set("n", "<C-j>", ":resize +1<CR>")
+
+--
+-- marks management
+--
+keymap.set("n", "<leader>mc", "<cmd>:delmarks A-Z<CR>")
+keymap.set("n", "'", "`")
 
 --
 -- page scrolling
