@@ -4,6 +4,6 @@ return {
         "nvim-telescope/telescope.nvim"
     },
     keys = {
-        { "<leader>bu", "<cmd>Telescope undo<CR>" }
+        { "<leader>bu", "<cmd>Telescope undo<CR>", desc="[Telescope] Buffer Undo Tree" }
     },
 }
