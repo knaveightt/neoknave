@@ -6,6 +6,12 @@ return {
     config = function()
         local lualine = require("lualine")
 
-        lualine.setup({})
+        lualine.setup({
+            options = {
+                disabled_filetypes = {
+                    'NvimTree',
+                },
+            },
+        })
     end
 }
