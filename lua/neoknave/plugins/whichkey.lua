@@ -13,6 +13,9 @@ return {
             b = {
                 name = "+Buffer Actions",
             },
+            t = {
+                name = "+Tabpage Actions",
+            },
             f = {
                 name = "+File Actions",
             },
