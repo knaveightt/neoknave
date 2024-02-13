@@ -10,6 +10,7 @@ local options = {
     relativenumber = true, -- show line numbers as relative
     numberwidth = 3,       -- width of line number column
     wrap = false,          -- show long lines without wrapping
+    showmode = false,      -- dont show the -- Insert -- message
 }
 
 for k, v in pairs(options) do
