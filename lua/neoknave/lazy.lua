@@ -13,4 +13,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- return plugins directory for installation and configuration
-require("lazy").setup("neoknave.plugins")
+require("lazy").setup({{import = "neoknave.plugins"}, { import = "neoknave.plugins.lsp" }})
