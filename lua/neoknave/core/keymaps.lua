@@ -24,6 +24,7 @@ keymap.set("n", "<leader>tc", "<cmd>tabnew<CR>", { desc = "Create New Tab" })
 --
 keymap.set("n", "<leader>w", "<C-w>", { desc="+Window Cmd" })
 keymap.set("n", "<leader>wd", ":close<CR>", { desc="Delete Window" })
+keymap.set("n", "<leader>ww", "<C-w><C-w>", { desc="Switch Window" })
 keymap.set("n", "<C-h>", ":vertical resize -1<CR>") 
 keymap.set("n", "<C-l>", ":vertical resize +1<CR>")
 keymap.set("n", "<C-k>", ":resize -1<CR>")
