@@ -3,6 +3,14 @@ vim.g.mapleader=" "
 local keymap = vim.keymap
 
 --
+-- page scrolling shortcuts
+--
+keymap.set("n", "gh", "H")
+keymap.set("n", "gl", "L")
+keymap.set("n", "H", "<C-b>")
+keymap.set("n", "L", "<C-f>")
+
+--
 -- buffer shortcuts
 --
 keymap.set("n", "<leader>bc", "<cmd>nohlsearch<CR>", { desc = "Clear Search Highlights" }) -- clear highlights
@@ -40,11 +48,3 @@ keymap.set("v", "<C-k>", "xkP`[V`]")      -- multiple lines in visual mode
 --
 keymap.set("n", "<leader>md", "<cmd>:delmarks A-Z<CR>")
 keymap.set("n", "'", "`")
-
---
--- page scrolling
---
-keymap.set("n", "<leader>q", "q", { desc="Record Macro" }) -- to clear use of q for the below
-keymap.set("n", "q", "<C-u>")     -- 1/2 page scroll up
-keymap.set("n", "a", "<C-d>")     -- 1/2 page scroll down
--- I can use li to have the same effect as 'a', or A at the end of a line
