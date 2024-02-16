@@ -13,18 +13,16 @@ keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Close Buffer" })
 --
 -- tab shortcuts
 --
-keymap.set("n", "<leader>tt", "<C-w>T", { desc = "Move Window Buffer to Tab" })
+keymap.set("n", "<leader>tT", "<C-w>T", { desc = "Move Window Buffer to Tab" })
 keymap.set("n", "<leader>tn", "<cmd>tabnext<CR>", { desc = "Cycle Next Tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabprevious<CR>", { desc = "Cycle Prev Tab" })
-keymap.set("n", "<leader>td", "<cmd>tabclose<CR>", { desc = "Close Current Tab" })
-keymap.set("n", "<leader>tc", "<cmd>tabnew<CR>", { desc = "Create New Tab" })
+keymap.set("n", "<leader>tc", "<cmd>tabclose<CR>", { desc = "Close Current Tab" })
+keymap.set("n", "<leader>tt", "<cmd>tabnew<CR>", { desc = "Create New Tab" })
 
 --
 -- split management
 --
 keymap.set("n", "<leader>w", "<C-w>", { desc="+Window Cmd" })
-keymap.set("n", "<leader>wd", ":close<CR>", { desc="Delete Window" })
-keymap.set("n", "<leader>ww", "<C-w><C-w>", { desc="Switch Window" })
 keymap.set("n", "<C-h>", ":vertical resize -1<CR>") 
 keymap.set("n", "<C-l>", ":vertical resize +1<CR>")
 keymap.set("n", "<C-k>", ":resize -1<CR>")
@@ -33,7 +31,7 @@ keymap.set("n", "<C-j>", ":resize +1<CR>")
 --
 -- marks management
 --
-keymap.set("n", "<leader>mc", "<cmd>:delmarks A-Z<CR>")
+keymap.set("n", "<leader>md", "<cmd>:delmarks A-Z<CR>")
 keymap.set("n", "'", "`")
 
 --
