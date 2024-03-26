@@ -25,6 +25,16 @@ return {
             min_chars = 2,
         },
 
+        mappings = {
+            -- toggle check boxes
+            ["<leader>oc"] = {
+                action = function()
+                    return require("obsidian").util.toggle_checkbox()
+                end,
+                opts = { buffer = true },
+            },
+        },
+
         new_notes_location = "current_dir",
         preferred_link_style = "markdown",
 

@@ -1,3 +1,7 @@
+-- globals
+vim.g.markdown_folding = 1 -- for markdown folding
+
+-- set options
 local options = {
     expandtab = true,      -- convert tabs to spaces
     shiftwidth = 4,        -- autoindents will be 4 spaces 
@@ -12,8 +16,11 @@ local options = {
     wrap = false,          -- show long lines without wrapping
     showmode = false,      -- dont show the -- Insert -- message
     conceallevel = 2,      -- set conceal level, primarily for markdown
+    foldlevelstart = 99,   -- sets the starting state of folds as unfolded
 }
 
 for k, v in pairs(options) do
     vim.opt[k] = v
 end
+
+
