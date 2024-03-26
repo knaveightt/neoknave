@@ -16,7 +16,7 @@ keymap.set("n", "L", "<C-f>")
 keymap.set("n", "<leader>bc", "<cmd>nohlsearch<CR>", { desc = "Clear Search Highlights" }) -- clear highlights
 keymap.set("n", "<leader>bn", "<cmd>bnext<CR>", { desc = "Next Buffer" })
 keymap.set("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Prev Buffer" })
-keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Close Buffer" })
+keymap.set("n", "<leader>bd", "<cmd>bp<bar>sp<bar>bn<bar>bd<CR>", { desc = "Close Buffer Keep Window" })
 
 --
 -- tab shortcuts

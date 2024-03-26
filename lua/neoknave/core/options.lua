@@ -11,6 +11,7 @@ local options = {
     numberwidth = 3,       -- width of line number column
     wrap = false,          -- show long lines without wrapping
     showmode = false,      -- dont show the -- Insert -- message
+    conceallevel = 2,      -- set conceal level, primarily for markdown
 }
 
 for k, v in pairs(options) do

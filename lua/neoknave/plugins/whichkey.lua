@@ -25,6 +25,9 @@ return {
             p = {
                 name = "+Project Actions",
             },
+            o = {
+                name = "+Obsidian Actions",
+            },
         }, { prefix="<leader>" })
     end,
 }
