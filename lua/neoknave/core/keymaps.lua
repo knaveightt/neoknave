@@ -30,16 +30,24 @@ keymap.set("n", "<leader>tt", "<cmd>tabnew<CR>", { desc = "Create New Tab" })
 -- split management
 --
 keymap.set("n", "<leader>w", "<C-w>", { desc="+Window Cmd" })
-keymap.set("n", "<C-h>", ":resize -1<CR>")
-keymap.set("n", "<C-l>", ":resize +1<CR>")
-keymap.set("v", "<C-h>", ":<BS><BS><BS><BS><BS>vertical resize -1<CR>v") -- make what split resized be mode determined 
-keymap.set("v", "<C-l>", ":<BS><BS><BS><BS><BS>vertical resize +1<CR>v") -- (just a little trick), think v is vertical
+keymap.set("n", "<C-j>", "<C-w>j")
+keymap.set("n", "<C-k>", "<C-w>k")
+keymap.set("n", "<C-h>", "<C-w>h")
+keymap.set("n", "<C-l>", "<C-w>l")
+keymap.set("n", "<M-h>", ":vertical resize -1<CR>")
+keymap.set("n", "<M-l>", ":vertical resize +1<CR>")
+keymap.set("n", "<M-j>", ":resize +1<CR>")
+keymap.set("n", "<M-k>", ":resize -1<CR>")
+--keymap.set("n", "<C-h>", ":resize -1<CR>")
+--keymap.set("n", "<C-l>", ":resize +1<CR>")
+--keymap.set("v", "<C-h>", ":<BS><BS><BS><BS><BS>vertical resize -1<CR>v") -- make what split resized be mode determined 
+--keymap.set("v", "<C-l>", ":<BS><BS><BS><BS><BS>vertical resize +1<CR>v") -- (just a little trick), think v is vertical
 
 --
 -- line movements
 --
-keymap.set("n", "<C-j>", "ddp") -- single lines in normal mode
-keymap.set("n", "<C-k>", "ddkP") -- single lines in normal mode
+--keymap.set("n", "<C-j>", "ddp") -- single lines in normal mode
+--keymap.set("n", "<C-k>", "ddkP") -- single lines in normal mode
 keymap.set("v", "<C-j>", "xp`[V`]")     -- multiple lines in visual mode
 keymap.set("v", "<C-k>", "xkP`[V`]")      -- multiple lines in visual mode
 
