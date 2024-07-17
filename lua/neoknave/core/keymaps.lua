@@ -1,5 +1,5 @@
 -- set leader key for keymaps, and way to escape
-vim.g.mapleader=" "
+vim.g.mapleader=","
 local keymap = vim.keymap
 
 --
@@ -29,7 +29,7 @@ keymap.set("n", "<leader>tt", "<cmd>tabnew<CR>", { desc = "Create New Tab" })
 --
 -- split management
 --
-keymap.set("n", "<leader>w", "<C-w>", { desc="+Window Cmd" })
+keymap.set("n", "<leader>,", "<C-w>w", { desc="Switch to other window" })
 keymap.set("n", "<C-j>", "<C-w>j")
 keymap.set("n", "<C-k>", "<C-w>k")
 keymap.set("n", "<C-h>", "<C-w>h")
