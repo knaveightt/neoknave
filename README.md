@@ -1,9 +1,5 @@
 # neoknave
-Work in progress Neovim Configuration which I (plan to) keep updated as I go along.
+I am locking this repo!
 
-## Dependencies
-- git
-- patched font (nerdfonts)
-- lazygit
-- c compiler (e.g. gcc)
-- ripgrep (rg)
+I have started a new repository with my neovim configuration going forward.
+You may find it here: [https://github.com/knaveightt/knavvim](https://github.com/knaveightt/knavvim)
